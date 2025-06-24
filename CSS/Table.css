@@ -1,0 +1,11 @@
+table
+{
+    border-left: dotted;
+    border-right: double;
+    /* border-style: solid; */
+    border-color: blueviolet;
+    border-width: 2px;
+    box-shadow: 100px 100px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #f9f9f9;  
+}
