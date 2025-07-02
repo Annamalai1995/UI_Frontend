@@ -1,0 +1,142 @@
+ Installation
+-------------
+1.Node js Download and install
+2.check a version in cmd -(node -v)
+3.create an folder....go to that folder inside cmd
+4.npm install -g create-react-app
+5.create-react-app --version
+6.project creationopen a folder in vs code
+7.terminal --->new terminal
+	(Set-ExecutionPolicy RemoteSigned -Scope CurrentUser)
+8.create-react-app filename(create-react-app sample-frontend)
+9.project is created-inside public folder only used by index.html folder only
+9.inside src properties used by index.js,App.js,gitignore.....
+10.run  a program
+11.new terminal -cd foldername(inside a folder in terminal)
+12.npm start-program is executed
+
+React Js
+----------
+React is a JavaScript library for building user interfaces.
+React is not a framework.its a liabrary.
+Data flow is always in a single direction.
+React is used to build single-page applications.
+
+React allows us to create reusable UI components.
+
+The Render Function
+-------------------------
+React renders HTML to the web page by using a function called ReactDOM.render().
+The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+The purpose of the function is to display the specified HTML code inside the specified HTML element.
+
+ JSX
+------
+JSX stands for JavaScript XML.
+
+JSX allows us to write HTML in React. 
+
+JSX makes it easier to write and add HTML in React.
+
+DOM-Document Object Model
+-------
+React is virtural DOM-State change, compute ,render().....
+Browser DOM-Move to browser
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+Document->Html-->head,body-->head-title,document,scriptconnection-->body-div,p,class,id......
+
+Need to Node JS
+--------------------
+node js is a js runtime build on javascript engines(NPM,NPX)
+NPM-Node Package Manager
+ All npm packages are defined in files called package. json. The content of package.
+NPX-Node Package Execute-` 
+
+XML-Extensible Markup Language
+-------
+XML stands for extensible markup language. A markup language is a set of codes, or tags, that describes the text in a digital document.
+
+JSON- Java script Object Notation
+--------
+Data Storage-text,pdf,doc.jpeg...........
+JSON stands for JavaScript Object Notation. It is a text-based data interchange format to maintain the structure of the data. 
+JSON is the replacement of the XML data exchange format in JSON.
+JSON stores all the data in an array so data transfer makes easier. 
+That’s why JSON is the best for sharing data of any size even audio, video, etc.
+
+Components
+---------------
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return 
+HTML.
+
+Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+Bootstrap and Bootstrap Icons Install in react
+-----------------------------------------------------
+npm install react-bootstrap bootstrap  
+
+npm install bootstrap-icons
+
+how to import in files
+-------------------------
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+
+HOOKS
+----------
+React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component.
+
+USESTATE
+---------------
+The React useState Hook allows us to track state in a function component.
+State generally refers to data or properties that need to be tracking in an application.
+
+const[getvariablename,setvariablename]=useState()
+import  {useState} from 'react';
+
+USEEFFECT
+-----------------
+The useEffect Hook allows you to perform side effects in your components.
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+import {useEffect} from 'react';
+
+Router-Dom
+---------------
+install - npm install react-router-dom
+
+Browser Router ----->Routes-----Route
+-----------------------------------------------
+We wrap our content first with <BrowserRouter>.
+
+Then we define our <Routes>. An application can have multiple <Routes>. Our basic example only uses one.
+
+<Route>s can be nested. The first <Route> has a path of / and renders the Layout component.
+
+The nested <Route>s inherit and add to the parent route. So the blogs path is combined with the parent and becomes /blogs.
+
+The Home component route does not have a path but has an index attribute. That specifies this route as the default route for the parent route, 
+which is /.
+
+React Events
+----------------
+Just like HTML DOM events, React can perform actions based on user events.
+
+React has the same events as HTML: click, change, mouseover etc.
+
+
+Material UI
+--------------
+npm install @mui/material @emotion/react @emotion/styled
+
+how to use
+________
+import Button from '@mui/material/Button';
+
+export default function MyApp() {
+  return (
+    <div>
+      <Button variant="contained">Hello World</Button>
+    </div>
+  );
+0}
